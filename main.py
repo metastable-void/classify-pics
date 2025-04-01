@@ -25,6 +25,8 @@ class_descriptions = [
     "a photo of city skylines",
     "an outdoor photo of a town or a city",
     "a picture of abstract patterns",
+    "a photo focusing on music or musical performance",
+    "a photo of paintings",
 ]
 
 inappropriate_classes = [
@@ -35,6 +37,8 @@ inappropriate_classes = [
     "a photo focusing on food or drinks",
     "a photo focusing on sports",
     "a photo focusing primarily on machines or vehicles",
+    "a photo focusing on music or musical performance",
+    "a photo of paintings",
 ]
 
 text_inputs = torch.cat([clip.tokenize(description) for description in class_descriptions]).to(device)
