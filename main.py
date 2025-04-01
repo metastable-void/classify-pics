@@ -23,6 +23,7 @@ class_descriptions = [
     "a photo focusing on sports",
     "a photo focusing primarily on machines or vehicles",
     "a photo of city skylines",
+    "an outdoor photo of a town or a city",
 ]
 
 inappropriate_classes = [
