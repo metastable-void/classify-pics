@@ -9,7 +9,7 @@ model, preprocess = clip.load("ViT-B/32", device=device)
 image = preprocess(Image.open(sys.argv[1])).unsqueeze(0).to(device)
 
 class_descriptions = [
-    "a scanned image of printed, written, or painted materials",
+    "a scanned or photographed image of printed, written, or painted materials",
     "a photo featuring a scenery",
     "a photo of a scenery with animals",
     "a photo inside a building",
@@ -28,10 +28,11 @@ class_descriptions = [
     "a photo focusing on music or musical performance",
     "a photo of paintings",
     "a picture of indoor objects",
+    "a picture of drawings or diagrams",
 ]
 
 inappropriate_classes = [
-    "a scanned image of printed, written, or painted materials",
+    "a scanned or photographed image of printed, written, or painted materials",
     "a photo inside a building",
     "a photo of one or more non-human animals, fish, bugs, or insects",
     "a photo of one or more persons",
@@ -41,6 +42,7 @@ inappropriate_classes = [
     "a photo focusing on music or musical performance",
     "a photo of paintings",
     "a picture of indoor objects",
+    "a picture of drawings or diagrams",
 ]
 
 text_inputs = torch.cat([clip.tokenize(description) for description in class_descriptions]).to(device)
