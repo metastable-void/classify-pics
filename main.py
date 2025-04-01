@@ -10,7 +10,7 @@ image = preprocess(Image.open(sys.argv[1])).unsqueeze(0).to(device)
 
 class_descriptions = [
     "a scanned or photographed image of printed, written, or painted materials",
-    "a photo featuring a scenery",
+    "a photo featuring a scenery, taken with a camera",
     "a photo of a scenery with animals",
     "a photo inside a building",
     "a photo featuring celestial bodies or phenomena",
