@@ -15,7 +15,7 @@ class_descriptions = [
     "a photo inside a building",
     "a photo featuring celestial bodies or phenomena",
     "a photo featuring architecture",
-    "a photo of one or more non-human creatures"
+    "a photo of one or more non-human animals, fish, bugs, or insects"
     "a photo of one or more persons",
     "a photo focusing on food or drinks",
     "an aerial photo featuring nature",
@@ -32,7 +32,7 @@ class_descriptions = [
 inappropriate_classes = [
     "a scanned image of printed, written, or painted materials",
     "a photo inside a building",
-    "a photo of one or more non-human creatures"
+    "a photo of one or more non-human animals, fish, bugs or insects"
     "a photo of one or more persons",
     "a photo focusing on food or drinks",
     "a photo focusing on sports",
