@@ -27,6 +27,7 @@ class_descriptions = [
     "a picture of abstract patterns",
     "a photo focusing on music or musical performance",
     "a photo of paintings",
+    "a picture of indoor objects",
 ]
 
 inappropriate_classes = [
@@ -39,6 +40,7 @@ inappropriate_classes = [
     "a photo focusing primarily on machines or vehicles",
     "a photo focusing on music or musical performance",
     "a photo of paintings",
+    "a picture of indoor objects",
 ]
 
 text_inputs = torch.cat([clip.tokenize(description) for description in class_descriptions]).to(device)
