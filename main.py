@@ -33,7 +33,7 @@ class_descriptions = [
 inappropriate_classes = [
     "a scanned image of printed, written, or painted materials",
     "a photo inside a building",
-    "a photo of one or more non-human animals, fish, bugs or insects",
+    "a photo of one or more non-human animals, fish, bugs, or insects",
     "a photo of one or more persons",
     "a photo focusing on food or drinks",
     "a photo focusing on sports",
