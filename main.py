@@ -24,6 +24,7 @@ class_descriptions = [
     "a photo focusing primarily on machines or vehicles",
     "a photo of city skylines",
     "an outdoor photo of a town or a city",
+    "a picture of abstract patterns",
 ]
 
 inappropriate_classes = [
